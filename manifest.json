@@ -1,9 +1,15 @@
 {
   "manifest_version": 2,
   "name": "White Background Enforcer",
+  "shortname": "WBGE",
   "version": "1.0",
   "description": "Sets white background on pages where background-color is not explicitly set",
-  "author":"N. Escobar / nickesc",
+  "author":"nickesc",
+  "homepage_url": "https://github.com/nickesc/white-background-enforcer",
+  "developer": {
+    "name": "nickesc",
+    "url": "https://github.com/nickesc/white-background-enforcer"
+  },
   "icons": {
     "16": "icons/wbge-16.png",
     "32": "icons/wbge-32.png",
