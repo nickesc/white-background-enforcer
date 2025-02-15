@@ -41,7 +41,6 @@ Without `WBGE` | With `WBGE`
 
 ## Options
 
-The color of the background can be changed using the extension's Toolbar Button or the `WBGE` `Preferences` tab in `Addon Manager (about:addons)` > `Extensions` > `White Background Enforcer`
+The extension can be disabled and the color of the background can be changed using the extension's Toolbar Button or the `WBGE` `Preferences` tab in `Addon Manager (about:addons)` > `Extensions` > `White Background Enforcer`
 
 ![WBGE preferences tab in the Addon Manager](docs/img/options.png)
-
