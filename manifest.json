@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "White Background Enforcer",
+  "version": "1.0",
+  "description": "Sets white background on pages where background-color is not explicitly set",
+  "author":"N. Escobar / nickesc",
+  "icons": {
+    "16": "icons/wbge-16.png",
+    "32": "icons/wbge-32.png",
+    "48": "icons/wbge-48.png",
+    "64": "icons/wbge-64.png",
+    "96": "icons/wbge-96.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/wbge-16.png",
+      "32": "icons/wbge-32.png",
+      "48": "icons/wbge-48.png",
+      "64": "icons/wbge-64.png",
+      "96": "icons/wbge-96.png"
+    },
+    "default_title": "WBGE Options",
+    "default_popup": "options/options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/wbge.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wbge@nickesc.github.io"
+    }
+  }
+}
