@@ -9,8 +9,7 @@
 
   <div>
     <a href="https://github.com/nickesc/white-background-enforcer"><img alt="Version: GitHub" src="https://img.shields.io/github/last-commit/nickesc/white-background-enforcer?display_timestamp=committer&style=for-the-badge&logo=github&label=Latest&labelColor=%23505050&color=brightgreen"></a>
-    <a href="https://addons.mozilla.org/en-US/firefox/addon/wbge/"><img alt="Version: addons.mozilla.org" src="https://img.shields.io/amo/v/wbge?style=for-the-badge&logo=firefox&label=Firefox&labelColor=%236e008b&color=%23F0F0F0
-    "></a>
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/wbge/"><img alt="Version: addons.mozilla.org" src="https://img.shields.io/amo/v/wbge?style=for-the-badge&logo=firefox&label=Firefox&labelColor=%236e008b&color=%23F0F0F0"></a>
   </div>
   <h3 align="center">
     <code>White Background Enforcer</code>
