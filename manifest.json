@@ -45,6 +45,10 @@
       "js": ["src/wbge.js"]
     }
   ],
+  "background": {
+    "scripts": ["src/background.js"],
+    "persistent": false
+  },
   "browser_specific_settings": {
     "gecko": {
       "id": "wbge@nickesc.github.io"

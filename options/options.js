@@ -3,6 +3,7 @@ function unsetOptions(e) {
     browser.storage.sync.remove("wbgeColor");
     browser.storage.sync.remove("wbgeEnabled");
     console.log("unsetting settings");
+    browser.runtime.sendMessage({event: "unset"})
     window.location.reload();
 }
 
@@ -13,6 +14,7 @@ function saveOptions(e) {
         wbgeEnabled: document.querySelector("#enabled").checked
     }
     browser.storage.sync.set(options);
+    browser.runtime.sendMessage({event: "save"})
     console.log(options)
 }
 
@@ -31,7 +33,7 @@ function restoreOptions() {
     }
 
     function onError(error) {
-        console.log(`Error: ${error}`);
+        console.error(`Error: ${error}`);
     }
 
     let gettingOptions = browser.storage.sync.get(["wbgeColor","wbgeEnabled"]);
