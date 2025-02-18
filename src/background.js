@@ -15,5 +15,10 @@ function executeWbgeOnActive(activeInfo) {
     executeWbge(tabId);
 }
 
+const filter = {
+    properties: ["url"],
+};
+
+browser.tabs.onUpdated.addListener(executeWbgeOnActive, filter);
 browser.tabs.onActivated.addListener(executeWbgeOnActive);
 browser.runtime.onMessage.addListener(executeWbgeOnActive);
