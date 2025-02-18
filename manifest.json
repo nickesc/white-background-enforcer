@@ -15,7 +15,8 @@
     "32": "icons/wbge-32.png",
     "48": "icons/wbge-48.png",
     "64": "icons/wbge-64.png",
-    "96": "icons/wbge-96.png"
+    "96": "icons/wbge-96.png",
+    "128": "icons/wbge-128.png"
   },
   "permissions": [
     "<all_urls>",
@@ -30,7 +31,8 @@
       "32": "icons/wbge-32.png",
       "48": "icons/wbge-48.png",
       "64": "icons/wbge-64.png",
-      "96": "icons/wbge-96.png"
+      "96": "icons/wbge-96.png",
+      "128": "icons/wbge-128.png"
     },
     "default_title": "WBGE Options",
     "default_popup": "options/options.html"
