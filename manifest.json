@@ -20,7 +20,9 @@
   },
   "permissions": [
     "<all_urls>",
-    "storage"
+    "storage",
+    "tabs",
+    "activeTab"
   ],
   "options_ui": {
     "page": "options/options.html"
