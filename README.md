@@ -42,6 +42,34 @@ The extension can be disabled and the color of the background can be changed usi
 
 ![WBGE preferences tab in the Addon Manager](docs/img/options.png)
 
+### Custom Rules
+
+Some websites may need cutom rules for WBGE to function how you would like. Custom rules can be defined in the following JSON format:
+```json
+{
+  "domain.com":{
+    "wbgeColor": "white",
+    "wbgeEnabled": true
+  }
+}
+```
+Some things to keep in mind:
+- Custom rules can only be applied to top-level domains (i.e. `reddit.com`, `aliexpress.us`).
+- You do not need to define both keys.
+- If the extension is not enabled, custom rules will not be applied.
+
+> For example, to add custom rules for Reddit and AliExpress:
+> ```json
+> {
+>   "reddit.com":{
+>     "wbgeEnabled": false
+>   },
+>   "aliexpress.us":{
+>     "wbgeColor": "#C0C0C0"
+>   }
+> }
+> ```
+
 ## Privacy
 
 `WBGE` does not collect or track any data.
