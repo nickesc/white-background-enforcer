@@ -37,7 +37,7 @@ function setBackgroundColor(item) {
     }
 
     // Check if background-color is transparent or unset
-    if (!currentBgColor || currentBgColor === 'rgba(0, 0, 0, 0)' || currentBgColor === 'transparent') {
+    if ((!currentBgColor || currentBgColor === 'rgba(0, 0, 0, 0)' || currentBgColor === 'transparent') || (bodyStyle.getPropertyValue("--wbge-status")==="enabled" && currentBgColor != item.wbgeColor)) {
         document.body.style.backgroundColor = color;
         document.body.style.setProperty("--wbge-status", "enabled");
         console.log("WBGE Executed")
