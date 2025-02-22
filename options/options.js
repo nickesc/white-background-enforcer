@@ -11,7 +11,8 @@ function saveOptions(e) {
     e.preventDefault();
     let options = {
         wbgeColor: document.querySelector("#color").value,
-        wbgeEnabled: document.querySelector("#enabled").checked
+        wbgeEnabled: document.querySelector("#enabled").checked,
+        wbgeRules: document.querySelector("#rules").value
     }
     browser.storage.sync.set(options);
     browser.runtime.sendMessage({event: "save"})
@@ -22,6 +23,7 @@ function restoreOptions() {
 
     function setOptionChoices(result) {
         document.querySelector("#color").value = result.wbgeColor || "white";
+        document.querySelector("#rules").value = result.wbgeRules || "";
 
         if (result.wbgeEnabled == true || result.wbgeEnabled == false) {
             document.querySelector("#enabled").checked = result.wbgeEnabled;
@@ -36,7 +38,7 @@ function restoreOptions() {
         console.error(`Error: ${error}`);
     }
 
-    let gettingOptions = browser.storage.sync.get(["wbgeColor","wbgeEnabled"]);
+    let gettingOptions = browser.storage.sync.get(["wbgeColor","wbgeEnabled","wbgeRules"]);
     gettingOptions.then(setOptionChoices, onError);
 }
 
