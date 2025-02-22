@@ -5,7 +5,7 @@
   "contributions_url": "https://ko-fi.com/nickesc",
   "requires_payment": false,
   "description": {
-    "en-US": "Overview\nWhite Background Enforcer (WBGE) is a small, open-source browser extension – made especially for Zen browser – that enforces (by default) a white background on transparent pages and pages that do not have a background-color set.\n\nOptions\nThe extension can be disabled and the color of the background can be changed using the extension's Toolbar Button or the extension's Preferences tab in Add-on Manager (about:addons) > Extensions > White Background Enforcer\n\nPrivacy\nWBGE does not collect or track any data.\n\nLicense\nWBGE is licensed under The MIT License.\n"
+    "en-US": "Overview\nWhite Background Enforcer (WBGE) is a small, open-source browser extension – made especially for Zen browser – that enforces (by default) a white background on transparent pages and pages that do not have a background-color set.\n\nOptions\nThe extension can be disabled and the color of the background can be changed using the extension's Toolbar Button or the extension's Preferences tab in Add-on Manager (about:addons) > Extensions > White Background Enforcer. Some websites may need cutom rules for WBGE to function how you would like. Custom rules are documented in the extension's README on GitHub.\n\nPrivacy\nWBGE does not collect or track any data.\n\nLicense\nWBGE is licensed under The MIT License.\n"
   },
   "homepage": {
     "en-US": "https://github.com/nickesc/white-background-enforcer"
