@@ -1,7 +1,12 @@
 function setBackgroundColor(item) {
     let rules;
     if (item.wbgeRules) {
-        rules = JSON.parse(item.wbgeRules);
+        try {
+            rules = JSON.parse(item.wbgeRules);
+        } catch {
+            rules = false;
+            console.log("Failed to read custom rules, JSON invalid")
+        }
     }
     let tld = getTabTld();
 

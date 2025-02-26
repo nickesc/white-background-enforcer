@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
   </head>
 
-  <body style="font-family: sans-serif;">
+  <body style="font-family: sans-serif; width: 400px">
     <form style="padding-left: 20px;">
       <h1>WBGE Options</h1>
       <label>Enabled: <input type="checkbox" id="enabled" name="enabled"></label>
@@ -14,7 +14,7 @@
       <p style="padding-left: 20px; color: grey">Ex.: white, #FFFFFF, rgb(255,255,255)
       </p>
       <label>Custom rules: <textarea id="rules" name="rules" rows="5" cols="29" placeholder='{"domain.com":{"wbgeColor": "white", "wbgeEnabled": true}}'></textarea></label>
-      <p style="padding-left: 20px; color: grey">Define custom rules for top-level domains.<br>See the extension's <a href="https://github.com/nickesc/white-background-enforcer/blob/main/README.md">README</a> for more information.
+      <p style="padding-left: 20px; color: grey">Define custom rules for top-level domains.<br>See the extension's <a href="https://github.com/nickesc/white-background-enforcer/blob/main/README.md">README</a> for more information.<span id="jsonErrorSpan" style="display: none; color: red;"><br>Error: <span id="jsonErrorText"></span>JSON not valid</span>
       </p>
       <h5>
         Press <code>Save</code> to apply changes.
