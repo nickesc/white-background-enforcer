@@ -1,4 +1,7 @@
 function isJsonString(str) {
+    if (str===""){
+        return true;
+    }
     try {
         JSON.parse(str);
     } catch (e) {
